@@ -4,3 +4,7 @@ class Printer(object):
 
     def print(self):
         print(self.obj)
+
+class PrintXmlHelper(Printer):
+    def print(self):
+        print('<person><name>' + str(self.obj) + '</name></person>')
