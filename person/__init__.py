@@ -1,5 +1,4 @@
-from person.printer import Printer
-from xml import PrintXmlHelper
+from printer.printer import Printer, XmlPrinter
 
 
 class Person(object):
@@ -10,7 +9,7 @@ class Person(object):
         return self.name
 
     def print_xml(self):
-        PrintXmlHelper(self).print()
+        XmlPrinter(self).print()
 
     def print(self):
         Printer(self).print()

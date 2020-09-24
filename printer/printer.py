@@ -5,6 +5,7 @@ class Printer(object):
     def print(self):
         print(self.obj)
 
-class PrintXmlHelper(Printer):
+
+class XmlPrinter(Printer):
     def print(self):
         print('<person><name>' + str(self.obj) + '</name></person>')
